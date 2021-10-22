@@ -1,0 +1,95 @@
+1. //example of the ArrayList class of the collections 
+import java.util.ArrayList;
+
+class Main {
+    public static void main(String[] args){
+        ArrayList<String> animals = new ArrayList<>();
+        // Add elements
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+
+        System.out.println("ArrayList: " + animals);
+    }
+}
+
+
+2. //program to shuffle the collection
+ import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Main {
+   public static void main(String[] argv) throws Exception {
+      ArrayList<String> obj = new ArrayList<String>();
+      obj.add("P");
+      obj.add("R");
+      obj.add("A");
+      obj.add("R");
+      obj.add("T");
+       obj.add("H");
+      obj.add("A");
+      obj.add("N");
+      obj.add("A");
+      Collections.shuffle(obj);
+      System.out.println(obj);
+   }   
+}
+
+
+3.//example for treeset
+import java.util.*;  
+class TreeSet1{  
+ public static void main(String args[]){  
+  //Creating and adding elements  
+  TreeSet<String> al=new TreeSet<String>();  
+  al.add("abc");  
+  al.add("def");  
+  al.add("abc");  
+  al.add("xyz");  
+  //Traversing elements  
+  Iterator<String> itr=al.iterator();  
+  while(itr.hasNext()){  
+   System.out.println(itr.next());  
+  }  
+ }  
+}  
+
+
+4.// usage of set methode
+import java.util.*;  
+public class ListExample2{  
+ public static void main(String args[]){  
+ //Creating a List  
+ List<String> list=new ArrayList<String>();  
+ //Adding elements in the List  
+ list.add("Mango");  
+ list.add("Apple");  
+ list.add("Banana");  
+ list.add("Grapes");  
+ //accessing the element    
+ System.out.println("Returning element: "+list.get(1));//it will return the 2nd element, because index starts from 0  
+ //changing the element  
+ list.set(1,"Dates");  
+ //Iterating the List element using for-each loop  
+ for(String fruit:list)  
+  System.out.println(fruit);  
+  
+ }  
+}  
+
+
+5.//enum set example
+import java.util.*;  
+enum days {  
+  SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY  
+}  
+public class EnumSetExample {  
+  public static void main(String[] args) {  
+    Set<days> set = EnumSet.of(days.TUESDAY, days.WEDNESDAY);  
+    // Traversing elements  
+    Iterator<days> iter = set.iterator();  
+    while (iter.hasNext())  
+      System.out.println(iter.next());  
+  }  
+}  
